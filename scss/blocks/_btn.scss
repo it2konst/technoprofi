@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+
+    background-color: var(--e9b902);
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: #fff;
+
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #c9b902;
+}
