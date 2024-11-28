@@ -1,0 +1,23 @@
+/* partners */
+.partners {
+    margin-bottom: 120px;
+
+    &__description {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 1.26;
+        text-transform: uppercase;
+        color: var(--darken-light);
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 110%;
+        color: var(--darken);
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,131 @@
+/* Header */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.disclaimer {
+    background-color: #f8d7da;
+    color: #721c24;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.header__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 16px;
+}
+
+.header__socials {
+    .nav__list {
+        display: flex;
+        gap: 16px;
+    }
+
+    .nav__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        aspect-ratio: 1;
+    }
+
+    img {
+        display: block;
+        width: 16px;
+        object-fit: cover;
+    }
+}
+
+.header__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+    a {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.54;
+        color: #333;
+    }
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        display: block;
+        width: 8px;
+        object-fit: cover;
+    }
+
+    a {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.67;
+        color: #333;
+    }
+}
+
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    gap: 16px;
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 116px;
+            object-fit: cover;
+        }
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.58;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+    .header__search {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        img {
+            display: block;
+            margin-left: 32px;
+            width: 16px;
+            object-fit: cover;
+        }
+    }
+}
