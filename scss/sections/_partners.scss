@@ -1,27 +1,7 @@
 /* partners */
+
 .partners {
     margin-bottom: 120px;
-
-    &__description {
-        font-family: var(--font-family);
-        font-weight: 400;
-        // font-size: 19px; //12
-        font-size: clamp(0.75rem, 0.591rem + 0.8vw, 1.188rem);
-        line-height: 1.26;
-        text-transform: uppercase;
-        color: var(--darken-light);
-        margin-bottom: 15px;
-    }
-
-    &__title {
-        font-family: var(--font-family);
-        font-weight: 500;
-        // font-size: 50px; //24
-        font-size: clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem);
-        line-height: 110%;
-        color: var(--darken);
-        margin-bottom: 50px;
-    }
 }
 
 .partners__list {
@@ -37,8 +17,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // min-width: 250px;
-        // min-height: 100px;
         border: 1px solid rgba(36, 36, 36, 0.1);
     }
 }
@@ -63,12 +41,13 @@
     height: 273px;
     img {
         mix-blend-mode: multiply;
-        // width: 100%;
-        // height: auto;
-        // object-fit: cover;
     }
 }
 
 .grid-container--second-row {
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    padding: 0;
+    .grid-item {
+        height: 254px;
+    }
 }
