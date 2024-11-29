@@ -59,6 +59,9 @@
 
     .features__border {
         display: block;
+        @include breakpoint(base) {
+            display: none;
+        }
         position: absolute;
         width: 100px;
         height: 0px;
