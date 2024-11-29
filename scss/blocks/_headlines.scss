@@ -1,0 +1,31 @@
+.title-h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    // font-size: 50px; //24
+    font-size: clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem);
+    line-height: 110%;
+    color: var(--darken);
+    margin-bottom: 50px;
+}
+
+.title-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    // font-size: 19px; //12
+    font-size: clamp(0.75rem, 0.591rem + 0.8vw, 1.188rem);
+    line-height: 1.26;
+    text-transform: uppercase;
+    color: var(--darken-light);
+    margin-bottom: 15px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--darken-light);
+        margin-right: 14px;
+        vertical-align: middle;
+    }
+}
