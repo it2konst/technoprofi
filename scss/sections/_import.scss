@@ -1,6 +1,7 @@
 /* Import */
 .import {
-    margin-bottom: 120px;
+    // margin-bottom: 120px; //40
+    margin-bottom: clamp(2.5rem, 0.682rem + 9.09vw, 7.5rem);
 
     .title-h2 {
         margin-bottom: 28px;
