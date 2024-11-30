@@ -33,10 +33,11 @@
         width: 16px;
         object-fit: cover;
 
-        transition: transform 0.2s ease-in;
+        transition: drop-shadow 0.2s ease-in;
 
         &:hover {
-            transform: scale(1.2);
+            // transform: rotate(10deg);
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
         }
     }
 }
