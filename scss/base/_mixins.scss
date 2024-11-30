@@ -38,3 +38,8 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}

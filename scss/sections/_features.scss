@@ -1,3 +1,5 @@
+/* Features */
+
 .features {
     display: flex;
     justify-content: space-between;
@@ -8,9 +10,8 @@
     margin-top: 73px;
     margin-right: auto;
     margin-left: auto;
-    // margin-bottom: 120px; //40
-    margin-bottom: clamp(2.5rem, 0.682rem + 9.09vw, 7.5rem);
-    // margin: 73px auto 120px auto;
+    // margin-bottom: 120px; //60
+    margin-bottom: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem);
 
     max-width: 1200px;
     width: 100%;
