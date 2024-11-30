@@ -56,8 +56,6 @@
 
     .btn {
         align-self: flex-start;
-        font-size: 16px;
-        padding: 18px 26px;
 
         @include breakpoint(md) {
             align-self: center;
