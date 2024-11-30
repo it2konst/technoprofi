@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Технопрофи</title>
+
+        <!-- styles -->
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/main.css" />
 
         <!-- favicon -->
@@ -163,14 +166,43 @@
                 <img src="./images/ibs-bg.webp" alt="ibs-bg" />
             </section>
 
-            <section class="clients none">
-                <h2 class="clients__title">Компании, выбирающие нас</h2>
-                <div class="clients__list">
-                    <!-- <div class="clients__item"><img src="ibs.png" alt="IBS" /></div>
-                    <div class="clients__item"><img src="smc.png" alt="SMC" /></div>
-                    <div class="clients__item"><img src="alabuga.png" alt="Алабуга" /></div>
-                    <div class="clients__item"><img src="integration.png" alt="Интеграция" /></div>
-                    <div class="clients__item"><img src="softline.png" alt="Softline" /></div> -->
+            <section class="clients container">
+                <p class="title-description">Партнёры и клиенты</p>
+                <h2 class="title-h2">Компании,<br />выбирающие нас</h2>
+
+                <div class="slider-wrapper">
+                    <div class="swiper">
+                        <div class="clients__list swiper-wrapper">
+                            <div class="clients__item swiper-slide">
+                                <img src="./images/clients/item/ibs.svg" alt="IBS" />
+                            </div>
+                            <div class="clients__item swiper-slide">
+                                <img src="./images/clients/item/smc.webp" alt="SMC" />
+                            </div>
+                            <div class="clients__item swiper-slide">
+                                <img src="./images/clients/item/alabuga.svg" alt="Алабуга" />
+                            </div>
+                            <div class="clients__item swiper-slide">
+                                <img src="./images/clients/item/integration.svg" alt="Интеграция" />
+                            </div>
+                            <div class="clients__item swiper-slide">
+                                <img src="./images/clients/item/softline.svg" alt="Softline" />
+                            </div>
+                            <div class="clients__item swiper-slide">
+                                <img src="./images/clients/item/smc.webp" alt="SMC" />
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="myslider-prev">
+                        <img src="./images/clients/prev.svg" alt="prev" />
+                    </div>
+                    <div class="myslider-next">
+                        <img src="./images/clients/next.svg" alt="next" />
+                    </div>
                 </div>
             </section>
 
@@ -225,5 +257,7 @@
                 </ul>
             </nav>
         </footer>
+
+        <script src="./js/main.js" defer></script>
     </body>
 </html>
