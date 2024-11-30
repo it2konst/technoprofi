@@ -1,25 +1,24 @@
 .btn {
     display: inline-block;
-    padding: 0px 27px;
+    padding: 0px toRem(27);
 
     background-color: var(--e9b902);
-    border-radius: 5px;
+    border-radius: toRem(5);
     border: none;
     outline: none;
     cursor: pointer;
 
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 16px;
-    line-height: 56px;
+    font-size: 1rem;
+    line-height: toRem(56);
     text-align: center;
     color: #fff;
 
-    transition: all 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 .btn:hover {
-    color: #fff;
     background-color: #c09a00;
     // темнее: #c09a00 — более насыщенный и темный оттенок золота.;
     // Светлее: #f7d14a — более светлый и яркий оттенок.
