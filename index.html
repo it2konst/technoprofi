@@ -4,20 +4,28 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Технопрофи</title>
-
         <!-- styles -->
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/main.css" />
-
         <!-- favicon -->
         <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
     </head>
 
     <body class="page">
-        <div class="disclaimer">
-            <p class="disclaimer__text">&#10148; This website is created for educational purposes and does not collect any data.<br />&#10148; Этот сайт выполнен в учебных целях и не собирает никаких данных.</p>
+        <!-- disclaimer -->
+        <div class="disclaimer" id="disclaimer">
+            <button class="close-btn" onclick="closeDisclaimer()">&times;</button>
+            <p class="disclaimer__text">• Этот сайт выполнен в учебных целях и не собирает никаких данных.</p>
+            <p class="disclaimer__text">• This website is created for educational purposes and does not collect any data.</p>
+            <a class="disclaimer__link" target="_blank" href="https://www.figma.com/design/TzTX7S5prwK70GyDIZO7aZ/Untitled?node-id=0-1&node-type=canvas">&#10148; Open Figma project</a>
         </div>
+        <script>
+            function closeDisclaimer() {
+                document.getElementById("disclaimer").style.display = "none";
+            }
+        </script>
+        <!-- end disclaimer -->
 
         <header class="header container">
             <div class="header__top">
