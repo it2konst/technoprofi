@@ -95,22 +95,32 @@
             // левый верхний
             clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%, 0% 10%);
             background-color: var(--e9b902);
+            @include breakpoint(base) {
+                clip-path: unset;
+            }
         }
 
         &:nth-of-type(2) {
             // правый верхний
             clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
+            @include breakpoint(base) {
+                clip-path: unset;
+            }
         }
 
         &:last-of-type {
             // левый нижний
             clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
+            @include breakpoint(base) {
+                clip-path: unset;
+            }
         }
 
-        transition: opacity 0.3s ease-in;
+        transition: opacity 0.2s ease-in, box-shadow 0.2s ease-in;
 
         &:hover {
             opacity: 0.8;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
     }
 }
