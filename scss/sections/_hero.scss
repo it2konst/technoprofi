@@ -29,15 +29,15 @@
             padding-left: 60px;
         }
         @include breakpoint(sm) {
-            padding-top: 16px;
-            padding-left: 30px;
+            padding-top: 20px;
+            padding-left: 20px;
         }
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 25px;
 
-        h1 {
+        .hero__title {
             font-family: var(--font-family);
             font-weight: 600;
             // font-size: 56px; //24
@@ -46,7 +46,7 @@
             color: #fbfbfd;
         }
 
-        p {
+        .hero__description {
             font-family: var(--font-family);
             font-weight: 500;
             // font-size: 18px; //12
