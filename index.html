@@ -227,11 +227,11 @@
                         </div>
                         <div class="form__field">
                             <label for="phone" class="form__label">Перезвонить на телефон</label>
-                            <input type="text" id="phone" class="form__input" placeholder="+7 (932) 152 24 14" />
+                            <input type="text" id="phone" class="form__input" placeholder="+7 (932) 152 XX XX" />
                         </div>
                         <div class="form__field">
                             <label for="email" class="form__label">Электронная почта</label>
-                            <input type="email" id="email" class="form__input" placeholder="info@gmail.ru" />
+                            <input type="email" id="email" class="form__input" placeholder="info@gmail.com" />
                         </div>
                         <div class="form__field">
                             <button class="btn">Далее</button>
@@ -281,20 +281,91 @@
             </section>
         </main>
 
-        <footer class="footer none">
-            <div class="footer__contacts">
-                <a href="mailto:info@XX-XX.ru" class="footer__email">info@XX-XX.ru</a>
-                <a href="tel:+7800300XXXX" class="footer__phone">+7 (800) 300-XX-XX</a>
-                <address class="footer__address">ул. Ленина, д. X, г. Москва, Россия</address>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__nav-inner">
+                    <div class="footer__logo">
+                        <img src="./images/footer/logo.png" alt="Logo" />
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">О Компании</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Продукция</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="socials__nav">
+                        <ul class="socials__list">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon" aria-hidden="true">
+                                        <use xlink:href="./images/footer/sprite.svg#icon-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon" aria-hidden="true">
+                                        <use xlink:href="./images/footer/sprite.svg#icon-inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon" aria-hidden="true">
+                                        <use xlink:href="./images/footer/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon" aria-hidden="true">
+                                        <use xlink:href="./images/footer/sprite.svg#icon-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon" aria-hidden="true">
+                                        <use xlink:href="./images/footer/sprite.svg#icon-dzen"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon" aria-hidden="true">
+                                        <use xlink:href="./images/footer/sprite.svg#icon-bh"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__contacts">
+                    <div class="footer__contacts-wrapper">
+                        <div class="footer__contact-item footer__contact-item--email">
+                            <p class="footer__contact-label">Наша почта:</p>
+                            <a href="mailto:info@gmail.com" class="footer__contact-link">info@gmail.com</a>
+                        </div>
+                        <div class="footer__contact-item footer__contact-item--phone">
+                            <p class="footer__contact-label">Наш телефон:</p>
+                            <a href="tel:+7800300XXXX" class="footer__contact-link">+7 (800) 300-XX-XX</a>
+                        </div>
+                        <div class="footer__contact-item footer__contact-item--address">
+                            <p class="footer__contact-label">Наш адрес:</p>
+                            <address class="footer__contact-address">ул. Ленина, д. X, г. Москва, Россия</address>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Заявка</a>
+                </div>
+
+                <div class="footer__copyright">
+                    <a href="#">Политика конфиденциальности</a>
+                    <p>Все права защищены.<br />© 2024</p>
+                </div>
             </div>
-            <nav class="footer__nav">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Продукция</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-                </ul>
-            </nav>
         </footer>
 
         <script src="./js/main.js" defer></script>
