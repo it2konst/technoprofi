@@ -78,6 +78,20 @@
         font-weight: 600;
         line-height: 41px;
     }
+
+    input:focus {
+        border: 1px solid var(--e9b902);
+        background-color: var(--bg-color);
+        outline: none;
+
+        transition: all 0.3s ease-in;
+    }
+
+    // input:active {
+    //     border: 2px solid blue;
+    //     background-color: lightblue;
+    //     outline: none;
+    // }
 }
 
 .form__label {
