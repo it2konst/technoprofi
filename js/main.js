@@ -8,7 +8,7 @@ const loadScript = (src) =>
     });
 
 const loadScripts = async () => {
-    const scripts = ["./js/lib/swiper-bundle.min.js", "./js/lib/swiper-options.js", "./js/nav-menu.js", "./js/lib/scrollreveal.js", "./js/main-animate.js"];
+    const scripts = ["./js/lib/scrollreveal.js", "./js/lib/swiper-bundle.min.js", "./js/lib/swiper-options.js", "./js/main-menu.js", "./js/main-animate.js"];
 
     try {
         for (const script of scripts) {
