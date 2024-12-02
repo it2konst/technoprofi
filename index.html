@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Технопрофи</title>
         <!-- styles -->
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -10,6 +11,12 @@
         <!-- favicon -->
         <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+        <!-- Open Graph -->
+        <meta property="og:url" content="https://it2konst.github.io/technoprofi/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Технопрофи" />
+        <meta property="og:description" content="Техническая поддержка вашего производства" />
+        <meta property="og:image" content="https://it2konst.github.io/technoprofi/images/favicon/opengraph.jpg" />
     </head>
 
     <body class="page">
@@ -20,11 +27,6 @@
             <p class="disclaimer__text">• This website is created for educational purposes and does not collect any data.</p>
             <a class="disclaimer__link" target="_blank" href="https://www.figma.com/design/TzTX7S5prwK70GyDIZO7aZ/Untitled?node-id=0-1&node-type=canvas">&#10148; Open Figma project</a>
         </div>
-        <script>
-            function closeDisclaimer() {
-                document.getElementById("disclaimer").style.display = "none";
-            }
-        </script>
         <!-- end disclaimer -->
 
         <header class="header container">
@@ -227,15 +229,15 @@
                     <div class="form">
                         <div class="form__field">
                             <label for="name" class="form__label">Ваше имя</label>
-                            <input type="text" id="name" class="form__input" placeholder="Александр" />
+                            <input type="text" id="name" class="form__input" placeholder="Александр" autocomplete="username" />
                         </div>
                         <div class="form__field">
                             <label for="phone" class="form__label">Перезвонить на телефон</label>
-                            <input type="text" id="phone" class="form__input" placeholder="+7 (932) 152 XX XX" />
+                            <input type="text" id="phone" class="form__input" placeholder="+7 (932) 152 XX XX" autocomplete="tel" />
                         </div>
                         <div class="form__field">
                             <label for="email" class="form__label">Электронная почта</label>
-                            <input type="email" id="email" class="form__input" placeholder="info@gmail.com" />
+                            <input type="email" id="email" class="form__input" placeholder="info@gmail.com" autocomplete="email" />
                         </div>
                         <div class="form__field">
                             <button class="btn">Далее</button>
