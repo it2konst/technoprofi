@@ -1,7 +1,7 @@
 // Получаем необходимые элементы из DOM
 const navBtn = document.querySelector(".nav-menu-btn");
 const navBar = document.querySelector(".nav-menu");
-const navMenu = document.querySelector(".nav-menu__list");
+// const navMenu = document.querySelector(".nav-menu__list");
 const navLinks = document.querySelectorAll(".nav-menu__item");
 const htmlElement = document.documentElement;
 
@@ -17,13 +17,13 @@ const removeClass = (elements, className) => {
 
 // Функция для переключения состояния меню
 const toggleMenu = () => {
-    toggleClass([navBtn, navBar, navMenu], "active");
+    toggleClass([navBtn, navBar], "active");
     htmlElement.style.overflowY = htmlElement.style.overflowY === "hidden" ? "auto" : "hidden";
 };
 
 // Функция для закрытия меню
 const closeMenu = () => {
-    removeClass([navBtn, navBar, navMenu], "active");
+    removeClass([navBtn, navBar], "active");
     htmlElement.style.overflowY = "auto";
 };
 

@@ -8,7 +8,7 @@ const loadScript = (src) =>
     });
 
 const loadScripts = async () => {
-    const scripts = ["./js/lib/swiper-bundle.min.js", "./js/lib/swiper-options.js", "./js/app-script.js"];
+    const scripts = ["./js/lib/swiper-bundle.min.js", "./js/lib/swiper-options.js", "./js/nav-menu.js"];
 
     try {
         for (const script of scripts) {
@@ -19,5 +19,9 @@ const loadScripts = async () => {
         console.error("Error loading scripts:", error);
     }
 };
+
+function closeDisclaimer() {
+    document.getElementById("disclaimer").style.display = "none";
+}
 
 loadScripts();
