@@ -1,6 +1,7 @@
 /* About */
 
 .about {
+    scroll-margin-top: 2rem;
     // margin-bottom: 120px; //60
     margin-bottom: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem);
 
@@ -34,6 +35,10 @@
             display: block;
             width: 100%;
             object-fit: cover;
+            &:hover {
+                opacity: 0.9;
+                transition: opacity 0.2s ease-in;
+            }
         }
     }
 }

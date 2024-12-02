@@ -44,6 +44,7 @@
             font-size: clamp(1.5rem, 0.773rem + 3.64vw, 3.5rem);
             line-height: 1.18;
             color: #fbfbfd;
+            user-select: none;
         }
 
         .hero__description {
@@ -54,6 +55,7 @@
             line-height: 1.56;
             color: #fbfbfd;
             margin-bottom: 25px;
+            user-select: none;
         }
     }
 }
