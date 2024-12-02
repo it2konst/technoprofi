@@ -1,6 +1,7 @@
 /* News */
 
 .news {
+    scroll-margin-top: 2rem;
     // margin-bottom: 100px; //50
     margin-bottom: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem);
 }
@@ -72,5 +73,9 @@
         width: 100%;
         height: auto;
         border-radius: 14px;
+        &:hover {
+            opacity: 0.9;
+            transition: opacity 0.2s ease-in;
+        }
     }
 }

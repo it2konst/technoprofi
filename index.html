@@ -36,9 +36,11 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link"><img src="./images/socials/vk.svg" alt="vk" /></a>
                         </li>
+                        <!--  
                         <li class="nav__item">
                             <a href="#" class="nav__link"><img src="./images/socials/inst.svg" alt="inst" /></a>
                         </li>
+                        -->
                         <li class="nav__item">
                             <a href="#" class="nav__link"><img src="./images/socials/telegram.svg" alt="telegram" /></a>
                         </li>
@@ -63,23 +65,23 @@
             </div>
             <nav class="header__nav">
                 <div class="header__logo">
-                    <img src="./images/logo.svg" alt="Технопрофи" />
+                    <a href="./" class="header__logo-link"><img src="./images/logo.svg" alt="Технопрофи" /></a>
                 </div>
                 <div class="nav-menu">
                     <ul class="nav-menu__list">
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Главная</a></li>
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Каталог</a></li>
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">О компании</a></li>
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Параллельный импорт</a></li>
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Новости</a></li>
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Контакты</a></li>
+                        <li class="nav-menu__item"><a href="./" class="nav-menu__link">Главная</a></li>
+                        <li class="nav-menu__item"><a href="#about" class="nav-menu__link">Каталог</a></li>
+                        <li class="nav-menu__item"><a href="#about" class="nav-menu__link">О компании</a></li>
+                        <li class="nav-menu__item"><a href="#import" class="nav-menu__link">Параллельный импорт</a></li>
+                        <li class="nav-menu__item"><a href="#news" class="nav-menu__link">Новости</a></li>
+                        <li class="nav-menu__item"><a href="#footer" class="nav-menu__link">Контакты</a></li>
                     </ul>
                 </div>
 
                 <div class="header__search">
                     <!-- <input type="search" placeholder="Поиск по каталогу" /> -->
                     <img src="./images/search.svg" alt="Search" />
-                    <a href="#" class="btn">Подать заявку</a>
+                    <a href="#request" class="btn">Подать заявку</a>
                     <div class="nav-menu-btn"></div>
                 </div>
             </nav>
@@ -150,7 +152,7 @@
                 </div>
             </section>
 
-            <section class="import container">
+            <section class="import container" id="import">
                 <p class="title-description">параллельный импорт</p>
                 <h2 class="title-h2">Расширьте свой бизнес<br />с параллельным импортом</h2>
                 <div class="import__wrapper">
@@ -220,7 +222,7 @@
                 </div>
             </section>
 
-            <section class="request">
+            <section class="request" id="request">
                 <div class="request__image">
                     <img src="./images/request-bg.webp" alt="Request" />
                 </div>
@@ -250,7 +252,7 @@
                 </div>
             </section>
 
-            <section class="about container">
+            <section class="about container" id="about">
                 <p class="title-description">о компании</p>
                 <h2 class="title-h2">«Технопрофи» - компания,<br />которую выбирают</h2>
                 <p class="about__description">За 10 лет сформировалась команда профессионалов, которые готовы оперативно помочь с решением производственных вопросов. Которые касаются как подбора оборудования, так и технической стороной применения и обслуживания.</p>
@@ -261,7 +263,7 @@
                 </div>
             </section>
 
-            <section class="news container">
+            <section class="news container" id="news">
                 <p class="title-description">новости компании</p>
                 <div class="news__title-wrapper">
                     <h2 class="title-h2">Будьте в курсе событий</h2>
@@ -287,7 +289,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__nav-inner">
                     <div class="footer__logo">
@@ -295,10 +297,10 @@
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">О Компании</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Продукция</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                            <li class="footer__item"><a href="#about" class="footer__link">О Компании</a></li>
+                            <li class="footer__item"><a href="#import" class="footer__link">Продукция</a></li>
+                            <li class="footer__item"><a href="#news" class="footer__link">Новости</a></li>
+                            <li class="footer__item"><a href="#request" class="footer__link">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="socials__nav">
@@ -310,6 +312,7 @@
                                     </svg>
                                 </a>
                             </li>
+                            <!-- 
                             <li class="socials__item">
                                 <a href="#" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
@@ -317,6 +320,7 @@
                                     </svg>
                                 </a>
                             </li>
+                             -->
                             <li class="socials__item">
                                 <a href="#" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">

@@ -1,6 +1,7 @@
 /* Footer */
 
 .footer {
+    scroll-margin-top: 2rem;
     padding: 35px 0;
     background-color: #27333e;
 }
@@ -107,6 +108,7 @@
         font-size: 16px;
         line-height: 160%;
         color: #fff;
+        user-select: none;
     }
 
     .footer__contact-link,
@@ -119,10 +121,10 @@
         text-decoration-skip-ink: none;
         color: #fff;
         cursor: pointer;
-        transition: color 0.2s ease-in;
 
         &:hover {
             color: var(--second-color);
+            transition: color 0.2s ease-in;
         }
     }
 
@@ -137,6 +139,7 @@
     justify-content: space-between;
 
     padding: 25px 0px;
+    user-select: none;
 
     a {
         font-family: var(--font-family);

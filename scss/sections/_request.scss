@@ -1,6 +1,7 @@
 /* Request */
 
 .request {
+    scroll-margin-top: 2rem;
     position: relative;
     // padding: 60px 0 0 0; //20
     padding: clamp(1.25rem, 0.341rem + 4.55vw, 3.75rem) 0 0 0;
@@ -36,6 +37,7 @@
     font-size: clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem);
     line-height: 1.1;
     color: #fbfbfd;
+    user-select: none;
 }
 
 .form {
@@ -86,6 +88,8 @@
     font-size: 14px;
     line-height: 1.03;
     color: var(--darken);
+    user-select: none;
+    cursor: auto;
 }
 
 .form__input {
@@ -114,6 +118,7 @@
     display: flex;
     flex-direction: column;
 
+    user-select: none;
     p {
         font-family: var(--font-family);
         font-weight: 500;

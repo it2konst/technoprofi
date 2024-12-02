@@ -47,6 +47,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+    user-select: none;
 
     .header__phone {
         display: flex;
@@ -100,11 +101,19 @@
     .header__logo {
         display: flex;
         align-items: center;
+        justify-content: center;
+        max-width: 116px;
+        overflow: hidden;
 
+        background-color: var(--bg-color);
+        border-radius: 0.8rem;
         img {
             display: block;
-            width: 116px;
+            max-width: 100%;
+            height: auto;
             object-fit: cover;
+            image-rendering: crisp-edges;
+            mix-blend-mode: multiply;
         }
     }
 
