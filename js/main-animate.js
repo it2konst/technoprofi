@@ -25,7 +25,9 @@ ScrollReveal().reveal(".grid-container img", { delay: 200, origin: "bottom", int
 ScrollReveal().reveal(".import__stat p", { delay: 200, origin: "right", interval: 100 });
 ScrollReveal().reveal(".import img", { delay: 300, origin: "right" });
 
-ScrollReveal().reveal(".clients__list img", { delay: 200, origin: "left", interval: 100 });
-ScrollReveal().reveal(".clients .myslider-prev img, .clients .myslider-next img", { delay: 200, origin: "top", interval: 100 });
+ScrollReveal().reveal(".clients .myslider-prev, .clients .myslider-next", { delay: 200, origin: "top", interval: 100 });
+
+ScrollReveal().reveal(".request .request__title", { delay: 200, origin: "left" });
+ScrollReveal().reveal(".request .form__privacy", { delay: 300, origin: "bottom" });
 
 ScrollReveal().reveal(".news__item img, .news__item p", { delay: 200, origin: "bottom", interval: 100 });
