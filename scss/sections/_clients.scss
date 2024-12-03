@@ -1,8 +1,7 @@
 /* Clients */
 
 .clients {
-    // margin-bottom: 120px; //60
-    margin-bottom: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem);
+    margin-bottom: rem-clamp(60, 120);
 }
 
 .clients__item {
@@ -11,10 +10,8 @@
     align-items: center;
 
     border: 1px solid rgba(36, 36, 36, 0.1);
-    // max-width: 273px;
-    // width: 100%;
-    width: 273px;
-    height: 273px;
+    width: rem(273); // 273px;
+    height: rem(273); // 273px;
 }
 
 //  slider
@@ -31,7 +28,7 @@
 .myslider-prev,
 .myslider-next {
     position: absolute;
-    top: -96px;
+    top: rem(-96); // -96px;
     // transform: translateY(-200%);
     z-index: 10;
     cursor: pointer;
@@ -61,11 +58,11 @@
 }
 
 .myslider-prev {
-    right: 60px;
+    right: rem(60); // 60px;
 }
 
 .myslider-next {
-    right: 0px;
+    right: 0;
 }
 
 .swiper .swiper-pagination {
@@ -73,10 +70,10 @@
     @include breakpoint(xsm) {
         display: block;
     }
-    bottom: 0px;
+    bottom: 0;
 }
 
 .swiper .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    width: rem(12); // 12px;
+    height: rem(12); // 12px;
 }

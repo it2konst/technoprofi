@@ -1,17 +1,17 @@
 .btn {
     display: inline-block;
-    padding: 0px toRem(27);
+    padding: 0 rem-clamp(22, 28);
 
     background-color: var(--e9b902);
-    border-radius: toRem(5);
+    border-radius: rem(5);
     border: none;
     outline: none;
     cursor: pointer;
 
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 1rem;
-    line-height: toRem(56);
+    font-size: rem-clamp(14, 16);
+    line-height: rem-clamp(36, 56);
     text-align: center;
     color: #fff;
     white-space: nowrap;

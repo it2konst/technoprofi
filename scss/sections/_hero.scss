@@ -40,8 +40,7 @@
         .hero__title {
             font-family: var(--font-family);
             font-weight: 600;
-            // font-size: 56px; //24
-            font-size: clamp(1.5rem, 0.773rem + 3.64vw, 3.5rem);
+            font-size: rem-clamp(34, 56);
             line-height: 1.18;
             color: #fbfbfd;
             user-select: none;
@@ -50,8 +49,7 @@
         .hero__description {
             font-family: var(--font-family);
             font-weight: 500;
-            // font-size: 18px; //12
-            font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+            font-size: rem-clamp(16, 18);
             line-height: 1.56;
             color: #fbfbfd;
             margin-bottom: 25px;

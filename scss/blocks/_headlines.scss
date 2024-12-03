@@ -2,32 +2,30 @@
     user-select: none;
     font-family: var(--font-family);
     font-weight: 500;
-    // font-size: 50px; //24
-    font-size: clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem);
-    line-height: 110%;
+    font-size: rem-clamp(32, 50);
+    line-height: 1.1;
     color: var(--darken);
-    margin-bottom: 50px;
+    margin-bottom: rem-clamp(32, 50);
 }
 
 .title-description {
     user-select: none;
     font-family: var(--font-family);
     font-weight: 400;
-    // font-size: 19px; //12
-    font-size: clamp(0.75rem, 0.591rem + 0.8vw, 1.188rem);
+    font-size: rem-clamp(16, 19);
     line-height: 1.26;
     text-transform: uppercase;
     color: var(--darken-light);
-    margin-bottom: 15px;
+    margin-bottom: rem(15);
 
     &::before {
         content: "";
         display: inline-block;
-        width: 4px;
-        height: 4px;
-        border-radius: 2px;
+        width: rem(4);
+        height: rem(4);
+        border-radius: rem(2);
         background: var(--darken-light);
-        margin-right: 14px;
+        margin-right: rem(14);
         vertical-align: middle;
     }
 }
