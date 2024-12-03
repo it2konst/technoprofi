@@ -5,7 +5,6 @@
     padding-bottom: rem-clamp(60, 120);
 
     position: relative;
-    // padding-bottom: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem);
 
     &__image {
         margin: auto;
@@ -43,7 +42,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: rem(60);
+    @include breakpoint(sm) {
+        justify-content: center;
+    }
 
     max-width: rem(1200);
     width: 100%;
@@ -52,6 +53,20 @@
     border: 1px solid rgba(33, 33, 35, 0.05);
     background-color: var(--lighten);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    input[type="text"] {
+        text-transform: capitalize;
+    }
+
+    .error-message {
+        margin-top: rem(5);
+        display: none;
+
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: rem(10);
+        color: red;
+    }
 }
 
 .form__field {

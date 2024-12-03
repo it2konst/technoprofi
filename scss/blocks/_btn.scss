@@ -18,13 +18,39 @@
     user-select: none;
 
     transition: background-color 0.2s ease-in;
+
+    @media (hover: hover) {
+        &:hover,
+        &:focus {
+            background-color: #c09a00;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        &:active {
+            background-color: var(--e9b902);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+
+    @media (hover: none) {
+        &:active {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
 }
 
-.btn:hover {
-    background-color: #c09a00;
-    // темнее: #c09a00 — более насыщенный и темный оттенок золота.;
-    // Светлее: #f7d14a — более светлый и яркий оттенок.
-    // Серебристый: #c0c0c0 — создаст контраст с золотым цветом.
-    // Коричневый: #a07800 — более теплый и насыщенный коричневый оттенок.
-    // Синий: #0073e6 — создаст контраст с желтым цветом.
+.btn.disabled {
+    background-color: #c0c0c0;
+    // cursor: not-allowed;
+    pointer-events: none;
 }
+
+// .btn1:hover {
+// background-color: #c09a00;
+// темнее: #c09a00 — более насыщенный и темный оттенок золота.;
+// Светлее: #f7d14a — более светлый и яркий оттенок.
+// Серебристый: #c0c0c0 — создаст контраст с золотым цветом.
+// Коричневый: #a07800 — более теплый и насыщенный коричневый оттенок.
+// Синий: #0073e6 — создаст контраст с желтым цветом.
+// }
