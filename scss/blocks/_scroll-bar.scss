@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 10px;
+    width: rem(10);
     background: var(--scroll-bar-color);
 }
 
@@ -8,6 +8,6 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    border-radius: 20px;
+    border-radius: rem(20);
     background: var(--scroll-thumb-hover-color);
 }

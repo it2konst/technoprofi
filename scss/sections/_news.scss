@@ -2,12 +2,11 @@
 
 .news {
     scroll-margin-top: 2rem;
-    // margin-bottom: 100px; //50
-    margin-bottom: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem);
+    margin-bottom: rem-clamp(60, 120);
 }
 
 .news__title-wrapper {
-    margin-bottom: toRem(50);
+    margin-bottom: rem(50);
 
     display: flex;
     flex-wrap: wrap;
@@ -20,14 +19,14 @@
     }
 
     .btn {
-        padding: 0px toRem(75);
+        padding: 0px rem(75);
     }
 }
 
 .news__list {
     display: flex;
     justify-content: space-between;
-    gap: 19px;
+    gap: rem-clamp(17, 19);
 
     @include breakpoint(lg) {
         flex-wrap: wrap;
@@ -35,23 +34,23 @@
     }
 
     .news__item {
-        max-width: 387px;
+        max-width: rem(387);
         width: 100%;
 
         p:first-of-type {
-            margin-bottom: 4px;
+            margin-bottom: rem(4);
 
             font-family: var(--font-family);
             font-weight: 400;
-            font-size: 16px;
-            line-height: 187%;
+            font-size: rem-clamp(14, 16);
+            line-height: 1.87;
             color: #333;
 
             opacity: 0.6;
         }
 
         p:not(:first-of-type) {
-            margin-bottom: 15px;
+            margin-bottom: rem(15);
 
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -61,7 +60,7 @@
 
             font-family: var(--font-family);
             font-weight: 500;
-            font-size: 18px;
+            font-size: rem-clamp(16, 18);
             line-height: 1.73;
             color: #1d1d1d;
         }
@@ -72,7 +71,9 @@
         object-fit: cover;
         width: 100%;
         height: auto;
-        border-radius: 14px;
+        border-radius: rem(14);
+        image-rendering: crisp-edges;
+
         &:hover {
             opacity: 0.9;
             transition: opacity 0.2s ease-in;

@@ -2,11 +2,10 @@
 
 .import {
     scroll-margin-top: 2rem;
-    // margin-bottom: 120px; //60
-    margin-bottom: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem);
+    margin-bottom: rem-clamp(60, 120);
 
     .title-h2 {
-        margin-bottom: toRem(28);
+        margin-bottom: rem(28);
     }
 }
 
@@ -19,12 +18,12 @@
     }
 
     gap: 1rem;
-    margin-bottom: toRem(50);
+    margin-bottom: rem(50);
 }
 
 .import__dec {
-    flex: 0 1 calc(50% - 8px);
-    height: 507px;
+    flex: 0 1 calc(50% - rem(8));
+    height: rem(507);
 
     @include breakpoint(base) {
         height: unset;
@@ -36,7 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: rem(300);
 
     .import__inner {
         display: flex;
@@ -48,8 +47,8 @@
 
             font-family: var(--font-family);
             font-weight: 500;
-            font-size: 16px;
-            line-height: 175%;
+            font-size: rem-clamp(14, 16);
+            line-height: 1.75;
             color: #212123;
             opacity: 0.9;
         }
@@ -60,13 +59,13 @@
 
         @include breakpoint(md) {
             align-self: center;
-            margin-bottom: 14px;
+            margin-bottom: rem(14);
         }
     }
 }
 
 .import__stats {
-    flex: 0 1 calc(50% - 8px);
+    flex: 0 1 calc(50% - rem(8));
     @include breakpoint(md) {
         flex: 0 1 100%;
         justify-content: center;
@@ -74,17 +73,17 @@
     display: flex;
     flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
-    gap: 20px;
+    gap: rem-clamp(18, 20); // 20px;
 
     .import__stat {
         display: flex;
         flex-direction: column;
-        padding: 19px 24px;
+        padding: rem(19) rem(24);
 
-        border-radius: 14px;
-        max-width: 280px;
+        border-radius: rem(14);
+        max-width: rem(280);
         width: 100%;
-        height: 240px;
+        height: rem(240);
 
         background-color: var(--bg-overlay);
         cursor: pointer;
@@ -126,17 +125,17 @@
 .import__stat-value {
     font-family: var(--second-family);
     font-weight: 800;
-    font-size: 30px;
+    font-size: rem-clamp(24, 30); // 30px;
     line-height: 1.05;
     letter-spacing: -0.02em;
     color: #fff;
-    margin-bottom: 11px;
+    margin-bottom: rem(11);
 
     span {
         font-family: var(--second-family);
         font-weight: 800;
-        font-size: 23px;
-        line-height: 115%;
+        font-size: rem(23);
+        line-height: 1.15;
         letter-spacing: -0.02em;
         color: #fff;
     }
@@ -145,7 +144,7 @@
 .import__stat-label {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: rem-clamp(14, 16);
     line-height: 1.3;
     color: #fff;
 }
