@@ -66,17 +66,7 @@
         }
     }
 
-    img {
-        display: block;
-        object-fit: cover;
-        width: 100%;
-        height: auto;
+    .news__image {
         border-radius: rem(14);
-        image-rendering: crisp-edges;
-
-        &:hover {
-            opacity: 0.9;
-            transition: opacity 0.2s ease-in;
-        }
     }
 }

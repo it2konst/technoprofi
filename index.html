@@ -32,10 +32,10 @@
 
         <header class="header container">
             <div class="header__top">
-                <div class="socials__nav">
+                <div class="header__socials">
                     <ul class="socials__list">
                         <li class="socials__item">
-                            <a href="#" class="socials__link">
+                            <a href="#!" class="socials__link">
                                 <svg class="socials__icon" aria-hidden="true">
                                     <use xlink:href="./images/sprites/socials.svg#icon-vk"></use>
                                 </svg>
@@ -43,7 +43,7 @@
                         </li>
                         <!--  
                         <li class="socials__item">
-                            <a href="#" class="socials__link">
+                            <a href="#!" class="socials__link">
                                 <svg class="socials__icon" aria-hidden="true">
                                     <use xlink:href="./images/sprites/socials.svg#icon-inst"></use>
                                 </svg>
@@ -51,28 +51,28 @@
                         </li>
                         -->
                         <li class="socials__item">
-                            <a href="#" class="socials__link">
+                            <a href="#!" class="socials__link">
                                 <svg class="socials__icon" aria-hidden="true">
                                     <use xlink:href="./images/sprites/socials.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a href="#" class="socials__link">
+                            <a href="#!" class="socials__link">
                                 <svg class="socials__icon" aria-hidden="true">
                                     <use xlink:href="./images/sprites/socials.svg#icon-whatsapp"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a href="#" class="socials__link">
+                            <a href="#!" class="socials__link">
                                 <svg class="socials__icon" aria-hidden="true">
                                     <use xlink:href="./images/sprites/socials.svg#icon-dzen"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a href="#" class="socials__link">
+                            <a href="#!" class="socials__link">
                                 <svg class="socials__icon" aria-hidden="true">
                                     <use xlink:href="./images/sprites/socials.svg#icon-bh"></use>
                                 </svg>
@@ -82,15 +82,17 @@
                 </div>
                 <div class="header__contacts">
                     <div class="header__phone">
-                        <img src="./images/phone.svg" alt="Phone" />
+                        <svg class="svg-phone" style="width: 0.5rem; height: 0.9375rem" fill="#888888">
+                            <use href="./images/sprites/header.svg#phone"></use>
+                        </svg>
                         <a href="tel:+7800300XXXX">+7 (800) 300-XX-XX</a>
                     </div>
-                    <a href="#" class="header__request-call">Заказать звонок</a>
+                    <a href="#!" class="header__request-call">Заказать звонок</a>
                 </div>
             </div>
             <nav class="header__nav">
                 <div class="header__logo">
-                    <a href="./" class="header__logo-link"><img src="./images/logo.svg" alt="Технопрофи" /></a>
+                    <a href="./" class="header__logo-link"><img src="./images/logo.png" alt="Технопрофи" /></a>
                 </div>
                 <div class="nav-menu">
                     <ul class="nav-menu__list">
@@ -104,9 +106,10 @@
                 </div>
 
                 <div class="header__search">
-                    <!-- <input type="search" placeholder="Поиск по каталогу" /> -->
-                    <img src="./images/search.svg" alt="Search" />
-                    <a href="#request" class="btn">Подать заявку</a>
+                    <svg class="svg-search">
+                        <use href="./images/sprites/header.svg#search"></use>
+                    </svg>
+                    <a class="btn" href="#request">Подать заявку</a>
                     <div class="nav-menu-btn"></div>
                 </div>
             </nav>
@@ -121,15 +124,15 @@
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <picture>
-                                        <source media="(min-width: 768px)" srcset="./images/page-main/hero-bg1.webp" />
-                                        <source media="(max-width: 767px)" srcset="./images/page-main/hero-bg1-768px.webp" />
+                                        <source media="(min-width: 48rem)" srcset="./images/page-main/hero-bg1.webp" />
+                                        <source media="(max-width: 47.9375rem)" srcset="./images/page-main/hero-bg1-768px.webp" />
                                         <img src="./images/page-main/hero-bg1.jpg" alt="Порт" />
                                     </picture>
                                 </li>
                                 <li class="splide__slide">
                                     <picture>
-                                        <source media="(min-width: 768px)" srcset="./images/page-main/hero-bg2.webp" />
-                                        <source media="(max-width: 767px)" srcset="./images/page-main/hero-bg2-768px.webp" />
+                                        <source media="(min-width: 48rem)" srcset="./images/page-main/hero-bg2.webp" />
+                                        <source media="(max-width: 47.9375rem)" srcset="./images/page-main/hero-bg2-768px.webp" />
                                         <img src="./images/page-main/hero-bg2.jpg" alt="Плывущий в океане корабль" />
                                     </picture>
                                 </li>
@@ -150,28 +153,28 @@
 
             <section class="features">
                 <div class="features__item">
-                    <img src="./images/square.svg" alt="" />
+                    <svg class="features__icon"><use href="./images/sprites/header.svg#square"></use></svg>
                     <div class="features__wrapper">
                         <h2 class="features__title">Гарантия<br /><span>производства</span></h2>
                         <span class="features__border"></span>
                     </div>
                 </div>
                 <div class="features__item">
-                    <img src="./images/square.svg" alt="" />
+                    <svg class="features__icon"><use href="./images/sprites/header.svg#square"></use></svg>
                     <div class="features__wrapper">
                         <h2 class="features__title">Экспресс<br /><span>доставка</span></h2>
                         <span class="features__border"></span>
                     </div>
                 </div>
                 <div class="features__item">
-                    <img src="./images/square.svg" alt="" />
+                    <svg class="features__icon"><use href="./images/sprites/header.svg#square"></use></svg>
                     <div class="features__wrapper">
                         <h2 class="features__title">Офисы<br /><span>по всей стране</span></h2>
                         <span class="features__border"></span>
                     </div>
                 </div>
                 <div class="features__item">
-                    <img src="./images/square.svg" alt="" />
+                    <svg class="features__icon"><use href="./images/sprites/header.svg#square"></use></svg>
                     <div class="features__wrapper">
                         <h2 class="features__title">Гибкие<br /><span>цены</span></h2>
                     </div>
@@ -207,7 +210,7 @@
                             <p class="import__description">Независимо от того, нужны ли вам товары для розничной торговли или производства, мы поможем вам найти оптимальные решения и обеспечим стабильные поставки. Расширьте свой бизнес с нашими услугами параллельного импорта уже сегодня.</p>
                             <p class="import__description">Получите доступ к широкому ассортименту качественных импортных товаров для вашего бизнеса. Наша компания<br />предлагает надежные услуги параллельного импорта,<br />обеспечивая вам доступ к мировым рынкам и конкурентное преимущество.</p>
                         </div>
-                        <a href="#" class="btn">Начать сотрудничество</a>
+                        <a href="#!" class="btn">Начать сотрудничество</a>
                     </div>
                     <div class="import__stats">
                         <div class="import__stat">
@@ -291,7 +294,7 @@
                             <button class="btn">Далее</button>
                             <div class="form__privacy">
                                 <p>Нажимая на кнопку, вы соглашаетесь</p>
-                                <p>с <a href="#" class="form__link">Пользовательским соглашением</a></p>
+                                <p>с <a href="#!" class="form__link">Пользовательским соглашением</a></p>
                             </div>
                         </div>
                     </div>
@@ -304,7 +307,7 @@
                 <p class="about__description">За 10 лет сформировалась команда профессионалов, которые готовы оперативно помочь с решением производственных вопросов. Которые касаются как подбора оборудования, так и технической стороной применения и обслуживания.</p>
                 <a href="./about.html" class="btn">Подробнее о компании</a>
 
-                <div class="about__image">
+                <div class="about__image img-flex">
                     <img src="./images/about/about-photo.webp" alt="hero" />
                 </div>
             </section>
@@ -313,23 +316,29 @@
                 <p class="title-description">новости компании</p>
                 <div class="news__title-wrapper">
                     <h2 class="title-h2">Будьте в курсе событий</h2>
-                    <a href="#" class="btn">Все новости</a>
+                    <a href="#!" class="btn">Все новости</a>
                 </div>
                 <div class="news__list">
                     <div class="news__item">
                         <p class="news__date">14.10.2024</p>
                         <p class="news__text">Компания Технопрофи приняла участие в Арктическом форуме</p>
-                        <img src="./images/news/news1.webp" alt="News 1" />
+                        <div class="news__image img-flex">
+                            <img src="./images/news/news1.webp" alt="News 1" />
+                        </div>
                     </div>
                     <div class="news__item">
                         <p class="news__date">11.09.2024</p>
                         <p class="news__text">Мы расширяем линейку брендов в ассортименте компании Logitech</p>
-                        <img src="./images/news/news2.webp" alt="News 2" />
+                        <div class="news__image img-flex">
+                            <img src="./images/news/news2.webp" alt="News 1" />
+                        </div>
                     </div>
                     <div class="news__item">
                         <p class="news__date">04.03.2024</p>
                         <p class="news__text">В России создана цифровая модель для промышленного объекта</p>
-                        <img src="./images/news/news3.webp" alt="News 3" />
+                        <div class="news__image img-flex">
+                            <img src="./images/news/news3.webp" alt="News 1" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -339,7 +348,7 @@
             <div class="container">
                 <div class="footer__nav-inner">
                     <div class="footer__logo">
-                        <img src="./images/footer/logo.png" alt="Logo" />
+                        <img src="./images/logo.png" alt="Logo" />
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__list">
@@ -349,49 +358,49 @@
                             <li class="footer__item"><a href="#request" class="footer__link">Контакты</a></li>
                         </ul>
                     </nav>
-                    <div class="socials__nav">
+                    <div class="footer__socials">
                         <ul class="socials__list">
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
+                                <a href="#!" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
-                                        <use xlink:href="./images/footer/sprite.svg#icon-vk"></use>
+                                        <use xlink:href="./images/sprites/socials.svg#icon-vk"></use>
                                     </svg>
                                 </a>
                             </li>
                             <!-- 
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
+                                <a href="#!" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
-                                        <use xlink:href="./images/footer/sprite.svg#icon-inst"></use>
+                                        <use xlink:href="./images/sprites/socials.svg#icon-inst"></use>
                                     </svg>
                                 </a>
                             </li>
                              -->
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
+                                <a href="#!" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
-                                        <use xlink:href="./images/footer/sprite.svg#icon-telegram"></use>
+                                        <use xlink:href="./images/sprites/socials.svg#icon-telegram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
+                                <a href="#!" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
-                                        <use xlink:href="./images/footer/sprite.svg#icon-whatsapp"></use>
+                                        <use xlink:href="./images/sprites/socials.svg#icon-whatsapp"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
+                                <a href="#!" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
-                                        <use xlink:href="./images/footer/sprite.svg#icon-dzen"></use>
+                                        <use xlink:href="./images/sprites/socials.svg#icon-dzen"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
+                                <a href="#!" class="socials__link">
                                     <svg class="socials__icon" aria-hidden="true">
-                                        <use xlink:href="./images/footer/sprite.svg#icon-bh"></use>
+                                        <use xlink:href="./images/sprites/socials.svg#icon-bh"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -414,11 +423,11 @@
                             <address class="footer__contact-address">ул. Ленина, д. X, г. Москва, Россия</address>
                         </div>
                     </div>
-                    <a href="#" class="btn">Заявка</a>
+                    <a href="#!" class="btn">Заявка</a>
                 </div>
 
                 <div class="footer__copyright">
-                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#!">Политика конфиденциальности</a>
                     <p>Все права защищены.<br />© 2024</p>
                 </div>
             </div>

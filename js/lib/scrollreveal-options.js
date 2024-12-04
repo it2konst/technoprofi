@@ -30,4 +30,4 @@ ScrollReveal().reveal(".clients .myslider-prev, .clients .myslider-next", { dela
 ScrollReveal().reveal(".request .request__title", { delay: 200, origin: "left" });
 ScrollReveal().reveal(".request .form__privacy", { delay: 300, origin: "bottom" });
 
-ScrollReveal().reveal(".news__item img, .news__item p", { delay: 200, origin: "bottom", interval: 100 });
+ScrollReveal().reveal(".news__image, .news__item p", { delay: 200, origin: "bottom", interval: 100 });

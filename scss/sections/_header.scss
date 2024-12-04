@@ -26,12 +26,6 @@
         align-items: center;
         gap: rem(10);
 
-        img {
-            display: block;
-            width: rem(8);
-            object-fit: cover;
-        }
-
         a {
             font-family: var(--font-family);
             font-weight: 600;
@@ -135,11 +129,18 @@
         align-items: center;
         gap: rem-clamp(24, 32);
 
-        img {
+        .svg-search {
             display: block;
             width: rem(16);
+            aspect-ratio: 1;
             object-fit: cover;
+            fill: #888;
             image-rendering: crisp-edges;
+            cursor: pointer;
+            transition: fill 0.3s ease-in;
+            &:hover {
+                fill: #000;
+            }
         }
 
         .btn {

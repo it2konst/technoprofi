@@ -26,18 +26,31 @@
         opacity: 0.9;
     }
 
-    &__image {
-        overflow: hidden;
-        border-radius: 14px;
+    &__button {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: rem(20);
 
-        img {
-            display: block;
+        margin-bottom: rem-clamp(32, 50);
+
+        .btn {
+            max-width: rem(260);
             width: 100%;
-            object-fit: cover;
-            &:hover {
-                opacity: 0.9;
-                transition: opacity 0.2s ease-in;
+            padding: 0;
+            margin: 0;
+
+            &:last-child {
+                font-weight: 600;
+                color: var(--darken);
+                background: transparent;
+                line-height: rem-clamp(34, 54);
+                border: 2px solid var(--e9b902);
             }
         }
+    }
+
+    &__image {
+        border-radius: 14px;
     }
 }
