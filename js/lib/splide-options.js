@@ -9,5 +9,5 @@ const mainSlider = new Splide("#main-slider", {
 
     lazyLoad: true,
     autoplay: true,
-    interval: 3000,
+    interval: 4000,
 }).mount();
