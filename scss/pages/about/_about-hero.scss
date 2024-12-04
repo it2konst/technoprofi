@@ -2,7 +2,7 @@
 
 .page-about {
     .hero {
-        height: 420px;
+        height: rem(420);
         margin-bottom: rem-clamp(60, 120);
         .hero__image {
             height: 100%;
