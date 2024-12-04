@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Технопрофи</title>
         <!-- styles -->
+        <link rel="stylesheet" href="./css/splide.min.css" />
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <!-- favicon -->
@@ -31,27 +32,51 @@
 
         <header class="header container">
             <div class="header__top">
-                <div class="header__socials">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link"><img src="./images/socials/vk.svg" alt="vk" /></a>
+                <div class="socials__nav">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" aria-hidden="true">
+                                    <use xlink:href="./images/socials/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
                         </li>
                         <!--  
-                        <li class="nav__item">
-                            <a href="#" class="nav__link"><img src="./images/socials/inst.svg" alt="inst" /></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" aria-hidden="true">
+                                    <use xlink:href="./images/socials/sprite.svg#icon-inst"></use>
+                                </svg>
+                            </a>
                         </li>
                         -->
-                        <li class="nav__item">
-                            <a href="#" class="nav__link"><img src="./images/socials/telegram.svg" alt="telegram" /></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" aria-hidden="true">
+                                    <use xlink:href="./images/socials/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link"><img src="./images/socials/whatsapp.svg" alt="whatsapp" /></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" aria-hidden="true">
+                                    <use xlink:href="./images/socials/sprite.svg#icon-whatsapp"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link"><img src="./images/socials/dzen.svg" alt="dzen" /></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" aria-hidden="true">
+                                    <use xlink:href="./images/socials/sprite.svg#icon-dzen"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link"><img src="./images/socials/hwels.svg" alt="hwels" /></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" aria-hidden="true">
+                                    <use xlink:href="./images/socials/sprite.svg#icon-bh"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +96,7 @@
                     <ul class="nav-menu__list">
                         <li class="nav-menu__item"><a href="./" class="nav-menu__link">Главная</a></li>
                         <li class="nav-menu__item"><a href="#about" class="nav-menu__link">Каталог</a></li>
-                        <li class="nav-menu__item"><a href="#about" class="nav-menu__link">О компании</a></li>
+                        <li class="nav-menu__item"><a href="./about.html" class="nav-menu__link">О компании</a></li>
                         <li class="nav-menu__item"><a href="#import" class="nav-menu__link">Параллельный импорт</a></li>
                         <li class="nav-menu__item"><a href="#news" class="nav-menu__link">Новости</a></li>
                         <li class="nav-menu__item"><a href="#footer" class="nav-menu__link">Контакты</a></li>
@@ -90,7 +115,28 @@
         <main class="main">
             <section class="hero">
                 <div class="hero__image">
-                    <img src="./images/header/header-bg.webp" alt="hero" />
+                    <!-- splide -->
+                    <div class="splide" id="main-slider">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="./images/page-main/hero-bg1.webp" />
+                                        <source media="(max-width: 767px)" srcset="./images/page-main/hero-bg1-768px.webp" />
+                                        <img src="./images/page-main/hero-bg1.jpg" alt="Порт" />
+                                    </picture>
+                                </li>
+                                <li class="splide__slide">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="./images/page-main/hero-bg2.webp" />
+                                        <source media="(max-width: 767px)" srcset="./images/page-main/hero-bg2-768px.webp" />
+                                        <img src="./images/page-main/hero-bg2.jpg" alt="Плывущий в океане корабль" />
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- splide end -->
                 </div>
 
                 <div class="container">
@@ -257,7 +303,7 @@
                 <p class="title-description">о компании</p>
                 <h2 class="title-h2">«Технопрофи» - компания,<br />которую выбирают</h2>
                 <p class="about__description">За 10 лет сформировалась команда профессионалов, которые готовы оперативно помочь с решением производственных вопросов. Которые касаются как подбора оборудования, так и технической стороной применения и обслуживания.</p>
-                <a href="#" class="btn">Подробнее о компании</a>
+                <a href="./about.html" class="btn">Подробнее о компании</a>
 
                 <div class="about__image">
                     <img src="./images/about/about-photo.webp" alt="hero" />
@@ -378,7 +424,7 @@
                 </div>
             </div>
         </footer>
-
-        <script src="./js/main.js" defer></script>
     </body>
+
+    <script src="./js/main.js"></script>
 </html>

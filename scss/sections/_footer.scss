@@ -55,32 +55,6 @@
             }
         }
     }
-
-    .socials__list {
-        display: flex;
-        align-items: center;
-        gap: rem-clamp(14, 16);
-
-        .socials__link {
-            display: flex;
-            align-items: center;
-            width: rem(20);
-            height: rem(20);
-
-            .socials__icon {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
-                transition: transform 0.2s ease-in;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-        }
-    }
 }
 
 .footer__contacts {
@@ -160,5 +134,30 @@
         font-size: rem(14);
         text-align: right;
         color: #fafafa;
+    }
+}
+
+.socials__list {
+    display: flex;
+    align-items: center;
+    gap: rem-clamp(14, 16);
+
+    .socials__link {
+        display: flex;
+        align-items: center;
+        width: rem(20);
+        height: rem(20);
+
+        .socials__icon {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
