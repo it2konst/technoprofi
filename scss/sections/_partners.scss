@@ -8,8 +8,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    gap: rem(20);
-    padding-bottom: rem(20);
+    gap: rem-clamp(18, 20);
+    padding-bottom: rem-clamp(18, 20);
 }
 
 .grid-container .grid-item {
@@ -18,13 +18,19 @@
     align-items: center;
 
     background-color: #f1f1f1;
-    padding: rem(20);
+    padding: rem-clamp(18, 20);
     text-align: center;
     border: 1px solid #ccc;
     border-radius: rem(5);
-    height: rem(273);
+    height: rem-clamp(140, 273);
     img {
-        mix-blend-mode: multiply;
+        display: block;
+        max-width: rem(180);
+        width: 100%;
+        height: auto;
+        // height: 100%;
+        object-fit: cover;
+        image-rendering: crisp-edges;
     }
 }
 
@@ -32,6 +38,6 @@
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     padding: 0;
     .grid-item {
-        height: rem(254);
+        height: rem-clamp(120, 254);
     }
 }
