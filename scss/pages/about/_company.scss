@@ -1,0 +1,84 @@
+/* page-about */
+
+.page-about {
+    .mission {
+        padding-bottom: rem-clamp(50, 100);
+
+        .mission__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: rem-clamp(14, 20);
+        }
+
+        .mission__item {
+            // flex: 1 1 calc(50% - rem-clamp(10, 20));
+            border: 1px solid rgba(36, 36, 36, 0.1);
+
+            max-width: rem(590);
+            width: 100%;
+            height: rem-clamp(224, 324);
+            padding-top: rem-clamp(32, 48);
+            padding-left: rem-clamp(32, 48);
+            border-radius: rem(14);
+
+            background-color: #27333e;
+            color: var(--lighten);
+        }
+
+        .mission__title {
+            margin-bottom: rem-clamp(14, 21);
+
+            font-weight: 600;
+            font-size: rem-clamp(20, 30);
+            line-height: 1.05;
+
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .mission__desc {
+            max-width: rem(526);
+
+            font-weight: 500;
+            font-size: rem-clamp(13, 16);
+            line-height: 1.75;
+
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 6;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:not(:last-child) {
+                margin-bottom: rem-clamp(12, 21);
+            }
+        }
+
+        .mission__item--accent {
+            background-color: var(--e9b902);
+            color: var(--darken);
+        }
+
+        .mission__item--image {
+            position: relative;
+            background-color: transparent;
+
+            .mission__image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                z-index: -1;
+
+                border-radius: 14px;
+            }
+        }
+    }
+}

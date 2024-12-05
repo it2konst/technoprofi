@@ -1,0 +1,18 @@
+/* page-about */
+
+.page-about {
+    .hero {
+        padding-bottom: rem-clamp(60, 120);
+
+        .hero__image {
+            img {
+                height: rem-clamp(320, 420);
+            }
+        }
+
+        &__content {
+            padding-top: rem-clamp(32, 75);
+            height: rem-clamp(320, 420);
+        }
+    }
+}
