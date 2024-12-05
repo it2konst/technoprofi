@@ -56,12 +56,6 @@
             line-height: 1.18;
             color: #fbfbfd;
             user-select: none;
-
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .hero__description {
@@ -72,12 +66,6 @@
             color: #fbfbfd;
             margin-bottom: rem-clamp(21, 25);
             user-select: none;
-
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 5;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
     }
 }

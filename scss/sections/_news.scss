@@ -40,7 +40,6 @@
         p:first-of-type {
             margin-bottom: rem(4);
 
-            font-family: var(--font-family);
             font-weight: 400;
             font-size: rem-clamp(14, 16);
             line-height: 1.87;
@@ -52,13 +51,6 @@
         p:not(:first-of-type) {
             margin-bottom: rem(15);
 
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            font-family: var(--font-family);
             font-weight: 500;
             font-size: rem-clamp(16, 18);
             line-height: 1.73;
