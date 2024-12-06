@@ -2,6 +2,7 @@
 
 .header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    position: relative;
 }
 
 .header__top {
@@ -69,9 +70,9 @@
         align-items: center;
         justify-content: center;
         max-width: rem(116);
+        // margin-right: auto;
         overflow: hidden;
 
-        // background-color: var(--bg-color);
         border-radius: 0.8rem;
         img {
             display: block;
@@ -79,7 +80,6 @@
             height: auto;
             object-fit: cover;
             image-rendering: crisp-edges;
-            // mix-blend-mode: soft-light;
         }
     }
 

@@ -25,8 +25,11 @@
         <div class="disclaimer" id="disclaimer">
             <button class="close-btn" onclick="closeDisclaimer()">&times;</button>
             <p class="disclaimer__text">• Этот сайт выполнен в учебных целях и не собирает никаких данных.</p>
-            <p class="disclaimer__text">• This website is created for educational purposes and does not collect any data.</p>
-            <a class="disclaimer__link" target="_blank" href="https://www.figma.com/design/TzTX7S5prwK70GyDIZO7aZ/Untitled?node-id=0-1&node-type=canvas">&#10148; Open Figma project</a>
+            <!-- <p class="disclaimer__text">• This website is created for educational purposes and does not collect any data.</p> -->
+            <div class="d-flex">
+                <p>&#10148;&nbsp;</p>
+                <a class="disclaimer__link" target="_blank" href="https://www.figma.com/design/TzTX7S5prwK70GyDIZO7aZ/Untitled?node-id=0-1&node-type=canvas">Open Figma project</a>
+            </div>
         </div>
         <!-- end disclaimer -->
 
@@ -106,13 +109,18 @@
                 </div>
 
                 <div class="header__search">
-                    <svg class="svg-search">
+                    <svg id="search-open" class="svg-search">
                         <use href="./images/sprites/header.svg#search"></use>
                     </svg>
                     <a class="btn" href="#request">Подать заявку</a>
                     <div class="nav-menu-btn"></div>
                 </div>
             </nav>
+            <div class="header__search-box" id="search-box">
+                <form class="search-form" action="">
+                    <input class="search-input" type="search" placeholder="Поиск по каталогу..." />
+                </form>
+            </div>
         </header>
 
         <main class="main">

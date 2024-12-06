@@ -10,8 +10,8 @@ body {
 }
 
 body {
-    background-color: var(--bg-color);
-    // background-color: #ccc;
+    // background-color: var(--bg-color);
+    background-color: #ccc;
 }
 
 .container {
@@ -41,6 +41,8 @@ body {
     background-color: #f8d7da;
     border: 1px solid #f5c6cb;
 
+    transition: color 0.2s ease-in;
+
     a {
         color: #721c24;
         text-decoration: none;
@@ -49,7 +51,7 @@ body {
 
     a:hover {
         color: #6a59d1;
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 
     .close-btn {
@@ -62,6 +64,11 @@ body {
         border: none;
         z-index: 10;
     }
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
 }
 
 .img-flex {
