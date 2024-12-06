@@ -13,7 +13,7 @@
     transform: translate(0, 80%);
 
     z-index: 10;
-    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 rem(7) rem(15) rgba(0, 0, 0, 0.1);
 
     opacity: 0;
     visibility: hidden;
@@ -21,7 +21,6 @@
 
     &.search-box--active {
         // transform: translate(0, 50%);
-
         opacity: 1;
         visibility: visible;
     }
@@ -31,18 +30,18 @@
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 0.8rem 1rem;
+        padding: rem-clamp(8, 12) rem-clamp(12, 16);
 
         background-color: rgba(255, 255, 255, 0.5);
-        // backdrop-filter: blur(10px);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(rem(10));
+        box-shadow: 0 rem(4) rem(6) rgba(0, 0, 0, 0.1);
         border-radius: 1rem;
 
         & input {
             display: block;
             width: 100%;
-            height: 3rem;
-            padding-inline: 0.5rem;
+            height: rem-clamp(36, 48);
+            padding-inline: rem-clamp(4, 8);
             border-radius: 0.5rem;
             border: rem(1) solid #ccc;
 
