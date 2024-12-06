@@ -8,12 +8,12 @@ const loadScript = (src) =>
     });
 
 const loadScripts = async () => {
-    const scripts = ["./js/lib/scrollreveal.js", "./js/lib/scrollreveal-options.js", "./js/lib/splide.js", "./js/lib/splide-options.js", "./js/main-menu.js", "./js/lib/swiper-bundle.min.js", "./js/lib/swiper-options.js", "./js/main-form-validation.js"];
+    const scripts = ["./js/lib/scrollreveal.js", "./js/lib/scrollreveal-options.js", "./js/lib/splide.js", "./js/lib/splide-options.js", "./js/main-menu.js", "./js/lib/swiper-bundle.min.js", "./js/lib/swiper-options.js", "./js/main-form-validation.js", "./js/main-search-form.js"];
 
     try {
         for (const script of scripts) {
             await loadScript(script);
-            console.log(`Script ${script} loaded`);
+            // console.log(`Script ${script} loaded`);
         }
     } catch (error) {
         console.error("Error loading scripts:", error);

@@ -96,17 +96,25 @@
                 </div>
 
                 <div class="header__search">
-                    <!-- <input type="search" placeholder="Поиск по каталогу" /> -->
-                    <!-- <img class="search-icon" src="./images/search.svg" alt="Search" /> -->
-                    <!-- <div class="search-icon"> -->
-                    <svg class="svg-search">
+                    <svg id="search-open" class="svg-search">
                         <use href="./images/sprites/header.svg#search"></use>
                     </svg>
-                    <!-- </div> -->
                     <a class="btn" href="#request">Подать заявку</a>
                     <div class="nav-menu-btn"></div>
                 </div>
             </nav>
+            <div class="header__search-box" id="search-box">
+                <form class="search-form" action="">
+                    <input class="search-input" type="search" placeholder="Поиск по каталогу" />
+                    <!--  
+                    <div class="search-icon">
+                        <svg class="svg-close" style="width: 2rem; height: 2rem" fill="#888888">
+                            <use href="./images/sprites/header.svg#circle-xmark"></use>
+                        </svg>
+                    </div>
+                    -->
+                </form>
+            </div>
         </header>
 
         <main class="main">
@@ -267,5 +275,6 @@
         <script src="./js/lib/splide.js"></script>
         <script src="./js/lib/splide-options-about.js"></script>
         <script src="./js/main-menu.js"></script>
+        <script src="./js/main-search-form.js"></script>
     </body>
 </html>
