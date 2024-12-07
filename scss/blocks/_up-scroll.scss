@@ -1,0 +1,47 @@
+.up-scroll {
+    // d-flex-center
+    position: fixed;
+    width: rem-clamp(30, 44);
+    height: rem-clamp(30, 44);
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 12;
+
+    background-color: darkcyan;
+    border-radius: rem-clamp(8, 12);
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(rem(10));
+    box-shadow: 0 rem(4) rem(6) rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+
+    cursor: pointer;
+    @include no-tap-highlight;
+    display: none;
+
+    svg {
+        // d-flex-center" style="max-width: 2rem; max-height: 2rem"
+        width: rem-clamp(24, 28);
+        aspect-ratio: 1;
+        object-fit: cover;
+        fill: #888;
+
+        transition: fill 0.2s ease-in, transform 0.2s ease-in;
+
+        &:hover {
+            fill: #666;
+            transform: translateY(-10%);
+        }
+    }
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: border-color 0.2s ease-in;
+
+    &:hover {
+        border-color: var(--e9b902);
+    }
+
+    &:active:hover {
+        opacity: 0.5;
+    }
+}
