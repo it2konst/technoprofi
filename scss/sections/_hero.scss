@@ -22,7 +22,6 @@
             width: 100%;
             height: rem-clamp(510, 600);
             object-fit: cover;
-            image-rendering: crisp-edges;
         }
 
         &::after {
