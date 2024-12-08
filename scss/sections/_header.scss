@@ -120,6 +120,11 @@
                 background: var(--second-color);
                 transition: width 0.3s ease;
             }
+
+            &::before {
+                content: attr(data-title);
+                white-space: nowrap;
+            }
         }
     }
 
@@ -214,13 +219,12 @@
             max-width: rem(290);
             width: 100%;
             padding: rem-clamp(28, 40) 0;
+            gap: 0;
             border-radius: rem(10);
             background: var(--modal-bg-color);
 
             will-change: transform;
             transition: transform 0.2s ease-in;
-
-            gap: 0;
 
             .nav-menu__item {
                 display: flex;
@@ -229,13 +233,19 @@
                 padding: rem(14) 0;
                 width: 86%;
                 border-radius: rem(10);
+                text-align: center;
 
                 a {
-                    font-size: rem(14);
+                    font-size: 1rem;
                 }
 
                 &:hover {
                     background-color: #fff;
+                }
+
+                .nav-menu__link::before {
+                    content: attr(data-title-wrap);
+                    white-space: pre-line;
                 }
             }
 
