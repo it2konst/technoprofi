@@ -18,13 +18,13 @@ const loadScripts = async () => {
         "./js/lib/swiper-options.js",
         "./js/main-form-validation.js",
         "./js/main-search-form.js",
-		"./js/main-up-scroll.js",
+        "./js/main-up-scroll.js",
     ];
 
     try {
         for (const script of scripts) {
             await loadScript(script);
-            console.log(`Script ${script} loaded`);
+            // console.log(`Script ${script} loaded`);
         }
     } catch (error) {
         console.error("Error loading scripts:", error);
