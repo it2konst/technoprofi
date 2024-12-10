@@ -28,20 +28,22 @@
 
         transition: fill 0.2s ease-in, transform 0.2s ease-in;
 
-        &:hover {
+        @include hover-media {
             fill: #666;
             transform: translateY(-10%);
         }
     }
 
     border: 1px solid rgba(255, 255, 255, 0.5);
-    transition: border-color 0.2s ease-in;
+    outline: 2px solid transparent;
+    transition: border-color 0.2s ease-in, outline 0.2s ease-in;
 
-    &:hover {
-        border-color: var(--e9b902);
+    @include hover-media {
+        outline: 2px solid var(--e9b902);
+        // outline-offset: 2px;
     }
 
-    &:active:hover {
-        opacity: 0.5;
+    &:active {
+        outline: 2px solid var(--e9b902);
     }
 }
