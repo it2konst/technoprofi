@@ -104,15 +104,20 @@
                 </div>
             </nav>
             <div class="header__search-box" id="search-box">
-                <form class="search-form" action="">
+                <!-- <form class="search-form" action="">
                     <input id="header-search-input" class="search-input" type="search" placeholder="Поиск по каталогу" autocomplete="off" />
-                    <!--  
+                     -->
+                <!--  
                     <div class="search-icon">
                         <svg class="svg-close" style="width: 2rem; height: 2rem" fill="#888888">
                             <use href="./images/sprites/header.svg#circle-xmark"></use>
                         </svg>
                     </div>
                     -->
+                <!-- </form> -->
+                <form class="search-form" action="#" method="get">
+                    <!-- <label for="header-search-input" class="visually-hidden">Поиск по каталогу</label> -->
+                    <input id="header-search-input" class="search-input" type="search" name="query" placeholder="Поиск по каталогу..." autocomplete="off" />
                 </form>
             </div>
         </header>

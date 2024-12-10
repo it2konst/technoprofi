@@ -17,7 +17,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: rem(1230); // 1230px;
+    max-width: rem(1230);
     width: 100%;
     padding: 0 rem(15);
 }
@@ -37,7 +37,7 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 0px 0px 20px 20px;
 
-    font-size: rem-clamp(14, 16); // 14px;
+    font-size: rem-clamp(14, 16);
     color: #721c24;
     background-color: #f8d7da;
     border: 1px solid #f5c6cb;
