@@ -28,8 +28,7 @@
 .myslider-prev,
 .myslider-next {
     position: absolute;
-    top: rem(-96); // -96px;
-    // transform: translateY(-200%);
+    top: rem(-96);
     z-index: 10;
     cursor: pointer;
 
@@ -37,23 +36,23 @@
         display: none;
     }
 
-    transition: opacity 0.2s ease-in, filter 0.2s ease-in;
-
-    @media (hover: hover) {
-        &:hover,
-        &:focus {
+    img {
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+        @include hover-media {
             opacity: 0.75;
-            filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+        }
+        &:active {
+            opacity: 0.75;
+            transform: scale(0.9);
         }
     }
 
-    @media (hover: none) {
-        &:active {
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            opacity: 0.75;
-            filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
-        }
+    transition: filter 0.2s ease-in;
+    @include hover-media {
+        filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+    }
+    &:active {
+        filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
     }
 }
 

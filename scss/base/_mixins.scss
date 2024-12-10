@@ -35,6 +35,21 @@
     }
 }
 
+@mixin hover-media {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:hover {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+        }
+    }
+}
+
 @mixin no-tap-highlight {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
