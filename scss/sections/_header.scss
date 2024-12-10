@@ -6,25 +6,22 @@
 }
 
 .header__top {
-    display: flex;
-    flex-wrap: wrap;
+    // d-flex
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     padding-top: rem(12);
     padding-bottom: rem(12);
     gap: 1rem;
 }
 
 .header__contacts {
-    display: flex;
+    // d-flex
     flex-wrap: wrap;
-    align-items: center;
     gap: rem-clamp(16, 20);
     user-select: none;
 
     .header__phone {
-        display: flex;
-        align-items: center;
+        // d-flex
         gap: rem(10);
 
         a {
@@ -58,19 +55,15 @@
 }
 
 .header__nav {
-    display: flex;
+    // d-flex
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
     padding: rem(24) 0;
     gap: rem-clamp(14, 16);
 
     .header__logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // .d-flex-center
         max-width: rem(116);
-        // margin-right: auto;
         overflow: hidden;
 
         border-radius: 0.8rem;
