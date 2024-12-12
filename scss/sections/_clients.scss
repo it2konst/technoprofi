@@ -64,6 +64,15 @@
     right: 0;
 }
 
+.swiper-button-disabled {
+    filter: unset;
+    cursor: default;
+    pointer-events: none;
+    img {
+        opacity: 0.5;
+    }
+}
+
 .swiper .swiper-pagination {
     display: none;
     @include breakpoint(xsm) {
